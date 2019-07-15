@@ -1,0 +1,45 @@
+body{
+    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("images (34).jpeg");
+    background-size: cover;
+    height: 100vh; 
+}
+code{
+    color: white;
+  }
+  .prop{
+    color: lightgreen;
+  }
+  .val{
+    color: purple;
+  }
+  .myName{
+    color: tomato;
+  }
+  .nav-link{
+      color: white !important;
+  }
+  .nav-item a:hover{
+    color: #777 !important;
+  }
+  .but{
+    width: 50% !important;
+    border: 1px solid white;
+    color: white;
+    border-radius: 0%;
+    margin-top: 5%;
+  }
+  .but:hover{
+      color: #777 !important;
+  }
+  @media (max-width: 575.98px) {
+    code{
+        display: none !important;
+    }
+    .content{
+        margin-top: 50%;
+    }
+    time{
+        visibility: hidden;
+    }
+  }
