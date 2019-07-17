@@ -3,6 +3,7 @@ body{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("images (34).jpeg");
     background-size: cover;
     height: 100vh; 
+    font-family: 'Merriweather Sans', sans-serif;
 }
 code{
     color: white;
@@ -41,5 +42,13 @@ code{
     }
     time{
         visibility: hidden;
+    }
+  }
+  @media (max-width: 767.98px) {
+    code{
+      font-size: 0.3em;
+    }
+    .content{
+      padding: 30% 0;
     }
   }

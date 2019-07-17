@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
     <header class="container-fluid">
-        <nav class="navbar-expand-lg fixed-bottom bg-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link"> HOME</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> ABOUT </a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> CONTACT</a></li>
-                <li class="nav-item"><a href="#" class="nav-link"> PORTFOLIO</a></li>
-            </ul>
-        </div>
-        </nav>
+            <nav class=" navbar-expand-md navbar-light bg-dark fixed-bottom font row">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"  (click)="isNavbarCollapsed = !isNavbarCollapsed"
+                    data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 10px; margin-right: 60%">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-left: 10px;">
+                            <ul class="nav-list nav navbar-nav col-sm-9" style="margin-left: 10px;">
+                                    <li class="nav-item"><a href="#" class="nav-link"> HOME</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"> ABOUT </a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"> CONTACT</a></li>
+                                    <li class="nav-item"><a href="#" class="nav-link"> PORTFOLIO</a></li>
+                                </ul>
+                    
+                    </div>
+                    <div class="col-sm-3 float-right">  
+                        <i class="fab fa-github-square"></i>
+                        <i class="fab fa-500px"></i>
+                        </div>  
+                  </nav>
+        
     </header>
-    <div class="container-fluid">
+    <div class="container-fluid main">
         <section class="container-fluid">
             <div class="row">
-     <div class="col-sm-6 col-md-8 align-self-center content">
+     <div class="col-sm-7 col-md-9 align-self-center content">
             <h1><span class="greeting">Hello,</span><span class="Name" contenteditable="true"></span><span>, I'm</span> <span class="myName">Ademola Madelewi.</span><h1><h3>A Front-End developer.</h3>
                 <a href="#" class="btn but" role="button"> Contact Me </a>
          </div>
-                <code class="col-sm-6 col-md-4 float-right">
+                <code class="col-sm-5 col-md-3 float-right">
                         {<br>
                            &nbsp <span class="prop">"author"</span> : <span class="val">"Ademola Madelewi"</span>, <br>
                            &nbsp <span class="prop">"TwitterUsername"</span> : <span class="val">"@Adem0la_jr"</span>, <br>
@@ -54,9 +63,10 @@
             </section>
     </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="app.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script src="app.js"></script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script src="dist/js/bootstrap.min.js"></script>
 </body>
 </html>
