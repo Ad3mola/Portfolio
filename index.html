@@ -13,23 +13,24 @@
 <body>
     <header class="container-fluid">
             <nav class=" navbar-expand-md navbar-light bg-dark fixed-bottom font row">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"  (click)="isNavbarCollapsed = !isNavbarCollapsed"
+                    <button class="navbar-toggler col-xs-7" type="button" data-toggle="collapse"  (click)="isNavbarCollapsed = !isNavbarCollapsed"
                     data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation" style="margin-left: 10px; margin-right: 60%">
                       <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="margin-left: 10px;">
-                            <ul class="nav-list nav navbar-nav col-sm-9" style="margin-left: 10px;">
-                                    <li class="nav-item"><a href="#" class="nav-link"> HOME</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link"> ABOUT </a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link"> CONTACT</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link"> PORTFOLIO</a></li>
+                    <div class="collapse navbar-collapse col-lg-8" id="navbarTogglerDemo02" style="margin-left: 10px;">
+                            <ul class="nav-list nav navbar-nav" style="margin-left: 10px;">
+                                    <li class="nav-item"><a href="index.html" class="nav-link"> HOME</a></li>
+                                    <li class="nav-item"><a href="about.html" class="nav-link"> ABOUT </a></li>
+                                    <li class="nav-item"><a href="contact.html" class="nav-link"> CONTACT</a></li>
+                                    <li class="nav-item"><a href="portfolio.html" class="nav-link"> PORTFOLIO</a></li>
                                 </ul>
                     
                     </div>
-                    <div class="col-sm-3 float-right">  
-                        <i class="fab fa-github-square"></i>
-                        <i class="fab fa-500px"></i>
-                        </div>  
+                    <div class="col">
+                        <a href="https://github.com/Ad3mola"><img src="icons/Github.svg" class="float-right mr-2"></a>
+                        <a href="https://twitter.com/Adem0la_jr"><img src="icons/twitter.svg" class="float-right mr-2"></a>
+                        <a href=""><img src="icons/Linkedin.svg" class="float-right mr-2"></a>
+                    </div>
                   </nav>
         
     </header>

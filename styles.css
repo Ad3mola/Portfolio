@@ -1,6 +1,6 @@
 body{
     color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("images (34).jpeg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("images/images (34).jpeg");
     background-size: cover;
     height: 100vh; 
     font-family: 'Merriweather Sans', sans-serif;
@@ -37,9 +37,6 @@ code{
     code{
         display: none !important;
     }
-    .content{
-        margin-top: 50%;
-    }
     time{
         visibility: hidden;
     }
@@ -51,4 +48,8 @@ code{
     .content{
       padding: 30% 0;
     }
+  }
+  img{
+    height:20px;
+    width: 20px;
   }
