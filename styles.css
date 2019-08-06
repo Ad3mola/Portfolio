@@ -1,55 +1,81 @@
-body{
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.7)), url("images/images (34).jpeg");
-    background-size: cover;
-    height: 100vh; 
-    font-family: 'Merriweather Sans', sans-serif;
+body {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("images/images (34).jpeg");
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Merriweather Sans', sans-serif;
 }
-code{
-    color: white;
+
+code {
+  color: white;
+}
+
+.prop {
+  color: lightgreen;
+}
+
+.val {
+  color: purple;
+}
+
+.myName {
+  color: tomato;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-item a:hover {
+  color: #777 !important;
+}
+
+.but {
+  width: 50% !important;
+  border: 1px solid white;
+  color: white;
+  border-radius: 0%;
+  margin-top: 5%;
+}
+
+.but:hover {
+  color: #777 !important;
+}
+
+@media (max-width: 575.98px) {
+  code {
+    display: none !important;
   }
-  .prop{
-    color: lightgreen;
+
+  time {
+    visibility: hidden;
   }
-  .val{
-    color: purple;
+}
+
+@media (max-width: 767.98px) {
+  code {
+    font-size: 0.3em;
   }
-  .myName{
-    color: tomato;
+
+  .content {
+    padding: 30% 0;
   }
-  .nav-link{
-      color: white !important;
-  }
-  .nav-item a:hover{
-    color: #777 !important;
-  }
-  .but{
-    width: 50% !important;
-    border: 1px solid white;
-    color: white;
-    border-radius: 0%;
-    margin-top: 5%;
-  }
-  .but:hover{
-      color: #777 !important;
-  }
-  @media (max-width: 575.98px) {
-    code{
-        display: none !important;
-    }
-    time{
-        visibility: hidden;
-    }
-  }
-  @media (max-width: 767.98px) {
-    code{
-      font-size: 0.3em;
-    }
-    .content{
-      padding: 30% 0;
-    }
-  }
-  img{
-    height:30px;
-    width: 30px;
-  }
+}
+
+a img {
+  height: 30px;
+  width: 30px;
+}
+
+.icons img {
+  height: 60px;
+  width: 60px;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.active {
+  color: #777 !important;
+}

@@ -12,13 +12,13 @@
     <title>Document</title>
 </head>
 
-<body class="text-dark">
+<body style="color: black">
     <header class="container-fluid">
         <nav class=" navbar-expand-md navbar-light fixed-bottom font row" style="background-color: #222">
-            <button class="navbar-toggler col-xs-7 " type="button" data-toggle="collapse"
+            <button class="navbar-toggler col-xs-7" type="button" data-toggle="collapse"
                 (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
-                style="margin-left: 10px; margin-right: 30%;">
+                style="margin-left: 10px; margin-right: 30%">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse col-lg-8 col-md-7" id="navbarTogglerDemo02" style="margin-left: 10px;">
@@ -27,10 +27,10 @@
                         <a href="index.html" class="nav-link"> HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link"> ABOUT </a>
+                        <a href="about.html" class="nav-link active"> ABOUT </a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link active"> CONTACT</a>
+                        <a href="contact.html" class="nav-link"> CONTACT</a>
                     </li>
                     <li class="nav-item">
                         <a href="portfolio.html" class="nav-link"> PORTFOLIO</a>
@@ -46,32 +46,37 @@
     </header>
     <div class="container main">
         <section class="container-fluid section card card-body bg-light">
-            <div class="card-title mb-4">
-                <h2 class="text-center font-weight-bolder">GET IN TOUCH</h2>
+            <div class="row border-bottom border-dark">
+                <div class="col-sm-3 card-img">
+                    <img src="images/33007749.jpg" alt="" class=" rounded-circle" height="140px" width="140px" />
+                </div>
+                <div class="card-title col-sm-9 mt-5">
+                    <h1 class="font-weight-bold">Ademola Madelewi</h1>
+                    <h4>Front-End Developer</h4>
+                </div>
             </div>
-            <div class="row justify-content-center">
-                <form action="" class="col-sm-6">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" name="" id="name" class="form-control " placeholder="Your name">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Email Address</label>
-                        <input type="text" name="" id="name" class="form-control " placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Topic</label>
-                        <input type="text" name="" id="name" class="form-control " placeholder="Subject Topic">
-                    </div>
-                    <div class="form-group">
-                        <label for="name">Subject</label>
-                        <textarea class="form-control" name="" id="name" cols="10" rows="5"
-                            placeholder="Write something..."></textarea>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" value="Submit" class="btn btn-dark">
-                    </div>
-                </form>
+            <div class="row">
+                <div class="col-sm-12 mt-5">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+                        architecto consectetur nostrum nihil animi eveniet, omnis
+                        cupiditate laudantium quisquam accusamus, nesciunt aliquam alias
+                        consequuntur quibusdam aut odio nisi inventore! Voluptas. Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Iusto sed
+                        commodi praesentium nam quo aperiam nesciunt maxime, laudantium
+                        omnis, magni maiores fuga. Quae odio, consequuntur id ratione
+                        error pariatur quia?
+                    </p>
+                </div>
+            </div>
+            <div class="row justify-content-center" style="margin-top:10px;">
+                <div class="col-xs-6 col-sm-8 col-md-6 icons">
+                    <img src="icons/html5.svg" alt="" />
+                    <img src="icons/css3.svg" alt="" />
+                    <img src="icons/js.svg" alt="" />
+                    <img src="icons/bootstrap.svg" alt="" />
+                    <img src="icons/less.svg" alt="" />
+                </div>
             </div>
         </section>
     </div>
@@ -85,6 +90,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
     <script src="dist/js/bootstrap.min.js"></script>
 </body>
 
