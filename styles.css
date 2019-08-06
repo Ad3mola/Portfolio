@@ -79,3 +79,7 @@ a img {
 .active {
   color: #777 !important;
 }
+
+a:hover {
+  text-decoration: none;
+}
