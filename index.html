@@ -11,75 +11,73 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
     <title>Portfolio</title>
 </head>
-
 <body>
     <header class="container-fluid">
-        <nav class=" navbar-expand-md navbar-light fixed-bottom font row" style="background-color: #222">
-            <button class="navbar-toggler col-xs-7 navbar-dark" type="button" data-toggle="collapse"
+        <nav class=" navbar-expand-md navbar-light fixed-bottom" style="background-color: #222">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse"
                 (click)="isNavbarCollapsed = !isNavbarCollapsed" data-target="#navbarTogglerDemo02"
                 aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation"
-                style="margin-left: 10px; margin-right: 30%;">
+                >
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse col-lg-8 col-md-7" id="navbarTogglerDemo02" style="margin-left: 10px;">
-                <ul class="nav-list nav navbar-nav" style="margin-left: 10px;">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="nav-list nav navbar-nav">
                     <li class="nav-item"><a href="index.html" class="nav-link active"> HOME</a></li>
                     <li class="nav-item"><a href="about.html" class="nav-link"> ABOUT </a></li>
                     <li class="nav-item"><a href="contact.html" class="nav-link"> CONTACT</a></li>
                     <li class="nav-item"><a href="portfolio.html" class="nav-link"> PORTFOLIO</a></li>
                 </ul>
-
-            </div>
-            <div class="col col-xs-4" style="margin-right: 10px; margin-top: 4px;">
-                <a href="https://github.com/Ad3mola"><img src="icons/Github.svg" class="float-right mr-2 img"></a>
-                <a href="https://twitter.com/Adem0la_jr"><img src="icons/Twitter.svg" class="float-right mr-2 img"></a>
-                <a href=""><img src="icons/Linkedin.svg" class="float-right mr-2 img"></a>
+                
+            <span class="ml-auto pull-right">
+                    <a href="https://github.com/Ad3mola"><img src="icons/Github.svg" class="mr-2 img"></a>
+                    <a href="https://twitter.com/Adem0la_jr"><img src="icons/Twitter.svg" class="mr-2 img"></a>
+                    <a href=""><img src="icons/Linkedin.svg" class="mr-2 img"></a>
+                </span>
             </div>
         </nav>
 
     </header>
     <div class="container-fluid">
-        <section class="container-fluid">
-            <div class="row">
-                <div class="col-sm-7 col-md-9 align-self-center  content">
-                    <h1><span class="greeting">Hello,</span><span class="Name" contenteditable="true"></span><span>,
-                            I'm</span> <span class="myName">Ademola Madelewi.</span>
-                        <h1>
-                            <h3>A Front-End developer.</h3>
-                            <a href="contact.html" class="btn but" role="button"> Contact Me </a>
+            <section class="container-fluid">
+                <div class="row" style="min-height: 100vh">
+                    <div class="col-sm-10 col-md-9 align-self-center ">
+                        <h1><span class="greeting">Hello,</span><span class="Name" contenteditable="true"></span><span>,
+                                I'm</span> <span class="myName">Ademola Madelewi.</span>
+                            <h1>
+                                <h3>A Front-End developer.</h3>
+                                <a href="contact.html" class="btn btn-outline-light pl-5 pr-5" role="button" style="border-radius: 0;"> Contact Me </a>
+                    </div>
+                    <code class="col-md-3 ">
+                        {<br>
+                        &nbsp <span class="prop">"author"</span> : <span class="val">"Ademola Madelewi"</span>, <br>
+                        &nbsp <span class="prop">"TwitterUsername"</span> : <span class="val">"@Adem0la_jr"</span>, <br>
+                        &nbsp <span class="prop">"description"</span> : <span class="val">"Front-End web developer"</span>,
+                        <br>
+                        &nbsp <span class="prop">"homepage"</span> : <span class="val">"Ad3mola.github.io"</span>, <br>
+                        &nbsp <span class="prop">"repository"</span>{<br> &nbsp &nbsp <span class="prop">"type"</span> :
+                        <span class="val">"Open-source"</span>, <br>
+                        &nbsp &nbsp <span class="prop">"url"</span> : <span class="val">"github.com/Ad3mola"</span>,
+                        <br>&nbsp&nbsp},<br>
+                        &nbsp <span class="prop">"engines"</span> : [<br> &nbsp&nbsp&nbsp<span
+                            class="val">"javascript"</span>,<br>&nbsp&nbsp&nbsp<span
+                            class="val">"html"</span>,<br>&nbsp&nbsp&nbsp<span
+                            class="val">"css"</span>,<br>&nbsp&nbsp&nbsp<span class="val">"bootstrap &&
+                            materialize"</span>,<br>&nbsp&nbsp&nbsp<span class="val">"React"</span>], <br>
+                        &nbsp <span class="prop">"dependencies"</span>{<br> &nbsp &nbsp <span class="prop">"webpack"</span>
+                        : <span class="val">"^4.19.1"</span>, <br>
+                        &nbsp &nbsp <span class="prop">"flexbox"</span> : <span class="val">"^1.0.0"</span>,<br>
+                        &nbsp &nbsp <span class="prop">"vue"</span> : <span class="val">"updating"</span>,<br>
+                        &nbsp &nbsp <span class="prop">"SASS"</span> : <span class="val">"^1.0.0"</span>,
+                        <br>&nbsp&nbsp},<br>&nbsp <span class="prop">"devDependencies"</span>{<br> &nbsp &nbsp <span
+                            class="prop">"food"</span> : <span class="val">"^1.0.0"</span>, <br>
+                        &nbsp &nbsp <span class="prop">"music"</span> : <span class="val">"sAintJHN!"</span>,<br>
+                        &nbsp &nbsp <span class="prop">"editor"</span> : <span class="val">"vscode"</span>, <br>&nbsp&nbsp},
+                        <br>}
+                    </code>
+                    <time class="align-items-end float-right" id="time" style="visibility: hidden">12:17:04 PM</time>
                 </div>
-                <code class="col-sm-5 col-md-3 float-right">
-                    {<br>
-                    &nbsp <span class="prop">"author"</span> : <span class="val">"Ademola Madelewi"</span>, <br>
-                    &nbsp <span class="prop">"TwitterUsername"</span> : <span class="val">"@Adem0la_jr"</span>, <br>
-                    &nbsp <span class="prop">"description"</span> : <span class="val">"GoogleALC student|webDev"</span>,
-                    <br>
-                    &nbsp <span class="prop">"homepage"</span> : <span class="val">"Ad3mola.github.io"</span>, <br>
-                    &nbsp <span class="prop">"repository"</span>{<br> &nbsp &nbsp <span class="prop">"type"</span> :
-                    <span class="val">"Open-source"</span>, <br>
-                    &nbsp &nbsp <span class="prop">"url"</span> : <span class="val">"github.com/Ad3mola"</span>,
-                    <br>&nbsp&nbsp},<br>
-                    &nbsp <span class="prop">"engines"</span> : [<br> &nbsp&nbsp&nbsp<span
-                        class="val">"javascript"</span>,<br>&nbsp&nbsp&nbsp<span
-                        class="val">"html"</span>,<br>&nbsp&nbsp&nbsp<span
-                        class="val">"css"</span>,<br>&nbsp&nbsp&nbsp<span class="val">"bootstrap &&
-                        materialize"</span>,<br>&nbsp&nbsp&nbsp<span class="val">"jquery"</span>,<br>
-                    &nbsp &nbsp<span class="val">"nodejs"</span><br>&nbsp &nbsp], <br>
-                    &nbsp <span class="prop">"dependencies"</span>{<br> &nbsp &nbsp <span class="prop">"webpack"</span>
-                    : <span class="val">"^4.19.1"</span>, <br>
-                    &nbsp &nbsp <span class="prop">"flexbox"</span> : <span class="val">"^1.0.0"</span>,<br>
-                    &nbsp &nbsp <span class="prop">"vue"</span> : <span class="val">"updating"</span>,<br>
-                    &nbsp &nbsp <span class="prop">"LESS"</span> : <span class="val">"^1.0.0"</span>,
-                    <br>&nbsp&nbsp},<br>&nbsp <span class="prop">"devDependencies"</span>{<br> &nbsp &nbsp <span
-                        class="prop">"food"</span> : <span class="val">"^1.0.0"</span>, <br>
-                    &nbsp &nbsp <span class="prop">"music"</span> : <span class="val">"sAintJHN!"</span>,<br>
-                    &nbsp &nbsp <span class="prop">"editor"</span> : <span class="val">"vscode"</span>, <br>&nbsp&nbsp},
-                    <br>}
-                </code>
-                <time class="align-items-end float-right" id="time">12:17:04 PM</time>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

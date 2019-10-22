@@ -5,7 +5,6 @@ body {
   min-height: 100vh;
   font-family: 'Merriweather Sans', sans-serif;
 }
-
 code {
   color: white;
   font-size: 0.8em;
@@ -31,27 +30,12 @@ code {
   color: #777 !important;
 }
 
-.but {
-  width: 50% !important;
-  border: 1px solid white;
-  color: white;
-  border-radius: 0%;
-  margin-top: 5%;
-}
-
-.main {
-  margin-top: -4%;
-}
-
 .but:hover {
   color: #777 !important;
 }
 
 @media (max-width: 575.98px) {
 
-  .main {
-    margin-top: -10%;
-  }
 
   code {
     display: none !important;
@@ -64,16 +48,9 @@ code {
 
 @media (max-width: 767.98px) {
 
-  .main {
-    margin-top: -10%;
-  }
 
   code {
     font-size: 0.3em;
-  }
-
-  .content {
-    margin: 35% 0;
   }
 }
 
@@ -87,14 +64,10 @@ a img {
   width: 60px;
 }
 
-.section {
-  margin-top: 100px;
-}
-
 .active {
   color: #777 !important;
 }
 
 a:hover {
   text-decoration: none;
-}
+} 
